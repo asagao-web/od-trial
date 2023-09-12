@@ -19,10 +19,10 @@ from math import sqrt as sqrt
 import xml.etree.ElementTree as ET
 
 # フォルダ「utils」のdata_augumentation.pyからimport。入力画像の前処理をするクラス
-from utils.data_augumentation import Compose, ConvertFromInts, ToAbsoluteCoords, PhotometricDistort, Expand, RandomSampleCrop, RandomMirror, ToPercentCoords, Resize, SubtractMeans
+from detections.customSSD.utils.data_augumentation import Compose, ConvertFromInts, ToAbsoluteCoords, PhotometricDistort, Expand, RandomSampleCrop, RandomMirror, ToPercentCoords, Resize, SubtractMeans
 
 # フォルダ「utils」にある関数matchを記述したmatch.pyからimport
-from utils.match import match
+from detections.customSSD.utils.match import match
 
 
 # 学習、検証の画像データとアノテーションデータへのファイルパスリストを作成する

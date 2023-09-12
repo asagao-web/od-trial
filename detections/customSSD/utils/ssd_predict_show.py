@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import cv2  # OpenCVライブラリ
 import torch
 
-from utils.ssd_model import DataTransform
+from detections.customSSD.utils.ssd_model import DataTransform
 
 
 class SSDPredictShow():

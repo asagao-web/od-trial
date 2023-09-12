@@ -3,9 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 
-from ssd_model import SSD
+from detections.customSSD.ssd_model import SSD
 from profiler.profile import timefn
-from utils.ssd_model import DataTransform
+from detections.customSSD.utils.ssd_model import DataTransform
 
 import os
 # get current directory
