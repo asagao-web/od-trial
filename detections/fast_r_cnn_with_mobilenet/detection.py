@@ -1,15 +1,10 @@
-# import sys
-# sys.path.append(r"od-trial\detections\DETR\detr")
-
-# from ..DETR.detr.models.matcher import HungarianMatcher
-# from ..DETR.detr.models.detr import SetCriterion
-
 import numpy as np
 import torch
 from torchvision import transforms
+from torchvision.models.detection import fasterrcnn_mobilenet_v3_large_320_fpn
 from profiler.profile import timefn
 
-model = torch.hub.load('facebookresearch/detr', 'detr_resnet50', pretrained=True)
+model = fasterrcnn_mobilenet_v3_large_320_fpn(pretrained = True)
 model.eval()
 
 
